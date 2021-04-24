@@ -1,14 +1,17 @@
-package com.example.employeeManagement.employeeManagement.bean;
+package com.example.employeeManagement.request.bean;
 
-public class Department {
-private String Name;
+import org.springframework.stereotype.Component;
+
+@Component
+public class DepartmentRequestModel {
+private String dName;
 private String dptId;
 private String reportingManager;
 public String getName() {
-	return Name;
+	return dName;
 }
-public void setName(String name) {
-	Name = name;
+public void setdName(String name) {
+	dName = name;
 }
 public String getDptId() {
 	return dptId;
